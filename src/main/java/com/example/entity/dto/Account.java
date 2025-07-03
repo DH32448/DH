@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.entity.dto;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
@@ -29,7 +29,7 @@ public class Account {
 
     private Integer gender; // 性别（0-未知，1-男，2-女）
 
-    @TableLogic // 逻辑删除标记
+//    @TableLogic // 逻辑删除标记
     @TableField("is_deleted")
     private Integer deleted; // 逻辑删除标记（0-未删除，1-已删除）
 
